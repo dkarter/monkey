@@ -45,8 +45,24 @@ const (
 
 	// FUNCTION represents a function
 	FUNCTION = "FUNCTION"
+
 	// LET reprensts variable declaration
 	LET = "LET"
+
+	// TRUE true
+	TRUE = "TRUE"
+
+	// FALSE false
+	FALSE = "FALSE"
+
+	// IF conditional
+	IF = "IF"
+
+	// ELSE conditional
+	ELSE = "ELSE"
+
+	// RETURN returns a value from a function
+	RETURN = "RETURN"
 
 	// Operators:
 
@@ -76,8 +92,13 @@ const (
 )
 
 var keywords = map[string]TokenType{
-	"fn":  FUNCTION,
-	"let": LET,
+	"fn":     FUNCTION,
+	"let":    LET,
+	"if":     IF,
+	"true":   TRUE,
+	"false":  FALSE,
+	"else":   ELSE,
+	"return": RETURN,
 }
 
 // LookupIdent checks if a token is a known keyword or an identifier
