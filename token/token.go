@@ -22,13 +22,6 @@ const (
 	// INT represents integer type numbers
 	INT = "INT"
 
-	// Operators:
-
-	// ASSIGN represents assignment
-	ASSIGN = "="
-	// PLUS represents addition of two numbers
-	PLUS = "+"
-
 	// Delimiters:
 
 	// COMMA represents a separator between two values
@@ -54,6 +47,32 @@ const (
 	FUNCTION = "FUNCTION"
 	// LET reprensts variable declaration
 	LET = "LET"
+
+	// Operators:
+
+	// ASSIGN represents assignment into a custom identifier
+	ASSIGN = "="
+
+	// PLUS used for number addition and concatenation (strings, arrays)
+	PLUS = "+"
+
+	// MINUS used for number subtraction
+	MINUS = "-"
+
+	// BANG used for negation and flipping boolean values
+	BANG = "!"
+
+	// ASTERISK used for number multipication
+	ASTERISK = "*"
+
+	// SLASH used for number division
+	SLASH = "/"
+
+	// LT short for Less Than, used for number comparison
+	LT = "<"
+
+	// GT short for Greater Than, used for number comparison
+	GT = ">"
 )
 
 var keywords = map[string]TokenType{
