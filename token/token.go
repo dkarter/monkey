@@ -89,6 +89,12 @@ const (
 
 	// GT short for Greater Than, used for number comparison
 	GT = ">"
+
+	// EQ returns boolean if left && right arguments are equal
+	EQ = "=="
+
+	// NOTEQ returns boolean if left && right arguments are not equal
+	NOTEQ = "!="
 )
 
 var keywords = map[string]TokenType{
