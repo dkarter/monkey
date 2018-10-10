@@ -1,7 +1,6 @@
 package lexer
 
 import (
-	"fmt"
 	"monkey/token"
 )
 
@@ -85,8 +84,6 @@ func (l *Lexer) NextToken() token.Token {
 
 		return tok
 	}
-
-	fmt.Printf("tok%+v\n", tok)
 
 	l.readChar()
 	return tok
